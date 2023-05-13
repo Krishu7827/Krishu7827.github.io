@@ -7,7 +7,6 @@
 }
 body{
  
- 
   background: #343F4F;
 }
 .wrapper{
@@ -74,7 +73,7 @@ body{
     padding-left: 30px;
     padding-right: 30px;
 }
-#home{
+.home-card{
 
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -91,7 +90,7 @@ body{
 
 
 
-.about-detail{
+.about{
 
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -495,7 +494,7 @@ header .btn{
        
       }
      
-      #home{
+      .home-card{
 
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -506,7 +505,7 @@ header .btn{
         width: 100%;
     }
 
-    .about-detail{
+    .about{
 
         display: grid;
         grid-template-columns: repeat(1,1fr);
