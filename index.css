@@ -129,6 +129,20 @@ body{
     width: 50px;
 }
 
+#resume-link-2{
+   color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 20px;
+     text-decoration: none;
+    border:none;
+}
+#resume-button-2{
+  border: none;
+  border-radius: 6px;
+ background-color: #343F4F;
+}
+
 .tech-section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
