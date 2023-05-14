@@ -312,8 +312,9 @@ header .menu a{
 }
 
 header .menu a:hover{
-  color: #000;
-  background: #fff;
+  color: skyblue;
+  
+ 
 }
 
 header .btn{
@@ -432,6 +433,15 @@ header .btn{
 .github_img_3{
   width: 350px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#resume-button-1 {
+  border: none;
+  background-color: rgb(31, 40, 51);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
 }
 
 @media (min-width: 768px) {
@@ -593,7 +603,10 @@ header .btn{
       padding-left: 30px;
       padding-right: 30px;
     }
-
+      
+    #user-detail-name{
+      text-align: center;
+    }
     
     
 }
