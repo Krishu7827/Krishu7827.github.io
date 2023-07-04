@@ -477,7 +477,7 @@ header .btn{
     position: fixed;
     background:rgb(31, 40, 51);
     flex-direction: column;
-    min-width: 400px;
+  
     height: 100vh;
     top: 0;
     right: -100%;
