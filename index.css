@@ -200,6 +200,16 @@ body{
     
 }
 
+.profile-img {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.home-img {
+  clip-path: circle(50%);
+}
+
+
 .project-description{
     font-weight:500;
     color: gray;
