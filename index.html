@@ -372,6 +372,16 @@ section {
 
 .proj-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
 .proj-name { font-family: var(--ff-display); font-weight: 600; font-size: 17px; }
+.proj-links { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.proj-link {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 8px;
+  border: 1px solid var(--border); color: var(--text3);
+  background: var(--surface2); transition: color .2s, border-color .2s, background .2s;
+  text-decoration: none;
+}
+.proj-link:hover { color: var(--green); border-color: rgba(0,229,160,.5); background: var(--green-dim); }
+.proj-link.gh:hover { color: var(--blue); border-color: rgba(77,158,255,.5); background: var(--blue-dim); }
 .proj-badge {
   font-family: var(--ff-mono); font-size: 10px; text-transform: uppercase;
   letter-spacing: .06em; padding: 3px 8px; border-radius: 20px; flex-shrink: 0;
@@ -734,7 +744,12 @@ footer {
       <div class="proj-card card-wide reveal">
         <div class="proj-header">
           <div class="proj-name">Unified Project Management System</div>
-          <span class="proj-badge">production</span>
+          <div class="proj-links">
+            <span class="proj-badge">production</span>
+            <a class="proj-link" href="https://upms.meity.gov.in/" target="_blank" rel="noopener" title="Live site">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
         </div>
         <div class="proj-org">Ministry of Electronics &amp; IT</div>
         <p class="proj-desc">Government project management platform with microservices architecture and RBAC authentication, built for teams running active programs at scale. Deployed on AWS with fully automated CI/CD via Jenkins.</p>
@@ -747,7 +762,12 @@ footer {
       <div class="proj-card reveal">
         <div class="proj-header">
           <div class="proj-name">API Setu</div>
-          <span class="proj-badge">production</span>
+          <div class="proj-links">
+            <span class="proj-badge">production</span>
+            <a class="proj-link" href="https://www.apisetu.gov.in/" target="_blank" rel="noopener" title="Live site">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
         </div>
         <div class="proj-org">Ministry of Electronics &amp; IT</div>
         <p class="proj-desc">API aggregation gateway unifying government digital services behind intelligent routing, rate limiting, and full-stack ELK monitoring.</p>
@@ -760,7 +780,12 @@ footer {
       <div class="proj-card reveal">
         <div class="proj-header">
           <div class="proj-name">Poshan Tracker</div>
-          <span class="proj-badge">production</span>
+          <div class="proj-links">
+            <span class="proj-badge">production</span>
+            <a class="proj-link" href="https://www.poshantracker.in/" target="_blank" rel="noopener" title="Live site">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
         </div>
         <div class="proj-org">Ministry of Electronics &amp; IT</div>
         <p class="proj-desc">Nutrition tracking platform with automated data validation pipelines and reporting dashboards for institutions monitoring student health nationwide.</p>
@@ -773,7 +798,12 @@ footer {
       <div class="proj-card card-wide reveal">
         <div class="proj-header">
           <div class="proj-name">Bhavishya — AI Model Marketplace</div>
-          <span class="proj-badge side">side project</span>
+          <div class="proj-links">
+            <span class="proj-badge side">side project</span>
+            <a class="proj-link gh" href="https://github.com/Krishu7827/future" target="_blank" rel="noopener" title="GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
         </div>
         <div class="proj-org">Self-directed system design</div>
         <p class="proj-desc">CLI marketplace where users describe a task and the platform auto-routes to the best-fit AI model by expertise, pricing, and performance — like Uber for AI models. Publishers register via OpenAPI-compatible APIs; the platform handles billing, token tracking, and per-session invoicing. A post-task review system dynamically re-ranks recommendations using a scoring algorithm personalised to user history.</p>
